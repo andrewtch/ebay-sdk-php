@@ -12,6 +12,7 @@ namespace DTS\eBaySDK\Trading\Enums;
 
 class CancelReasonCodeType
 {
+    const C_ADDRESS_ISSUES = 'AddressIssues';
     const C_BUYER_CANCEL_ORDER = 'BuyerCancelOrder';
     const C_BUYER_CANCEL_OR_ADDRESS_ISSUE = 'BuyerCancelOrAddressIssue';
     const C_BUYER_NOT_SCHEDULE = 'BuyerNotSchedule';

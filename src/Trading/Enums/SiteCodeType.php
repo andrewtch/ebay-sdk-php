@@ -20,6 +20,8 @@ class SiteCodeType
     const C_CANADA_FRENCH = 'CanadaFrench';
     const C_CHINA = 'China';
     const C_CUSTOM_CODE = 'CustomCode';
+    const C_CYPRUS = 'Cyprus';
+    const C_CZECHIA = 'Czechia';
     const C_E_BAY_MOTORS = 'eBayMotors';
     const C_FRANCE = 'France';
     const C_GERMANY = 'Germany';

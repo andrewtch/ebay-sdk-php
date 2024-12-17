@@ -29,7 +29,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $BuyItNowAvailable
  * @property \DTS\eBaySDK\Trading\Types\AmountType $MinimumBestOfferPrice
  * @property string $LocalListingDistance
- * @property string $TCROriginalItemID
  * @property string $ViewItemURLForNaturalSearch
  * @property \DTS\eBaySDK\Trading\Types\AmountType $BestOfferAutoAcceptPrice
  * @property \DTS\eBaySDK\Trading\Enums\EndReasonCodeType $EndingReason
@@ -141,12 +140,6 @@ class ListingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'LocalListingDistance'
-        ],
-        'TCROriginalItemID' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'TCROriginalItemID'
         ],
         'ViewItemURLForNaturalSearch' => [
             'type' => 'string',

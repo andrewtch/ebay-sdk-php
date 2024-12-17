@@ -15,7 +15,8 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $carrier
  * @property string $labelContent
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $labelCost
- * @property string $labelPrintStatus
+ * @property \DTS\eBaySDK\PostOrder\Enums\ShippingLabelFormatEnum $labelFormat
+ * @property \DTS\eBaySDK\PostOrder\Enums\LabelPrintStatusEnum $labelPrintStatus
  * @property string $labelURL
  * @property string $trackingNumber
  */
@@ -42,6 +43,12 @@ class GetShippingLabelResponse extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'labelCost'
+        ],
+        'labelFormat' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'labelFormat'
         ],
         'labelPrintStatus' => [
             'type' => 'string',

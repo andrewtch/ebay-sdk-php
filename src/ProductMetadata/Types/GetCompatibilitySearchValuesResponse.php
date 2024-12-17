@@ -63,7 +63,7 @@ class GetCompatibilitySearchValuesResponse extends \DTS\eBaySDK\ProductMetadata\
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {
-            self::$xmlNamespaces[__CLASS__] = 'xmlns="http://www.ebay.com/marketplace/marketplacecatalog/v1/services"';
+            self::$xmlNamespaces[__CLASS__] = 'xmlns="https://www.ebay.com/marketplace/marketplacecatalog/v1/services"';
         }
 
         $this->setValues(__CLASS__, $childValues);

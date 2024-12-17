@@ -17,11 +17,6 @@ namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
  * @property string $shippingCostPaidByOption
  * @property string $returnsWithinOption
  * @property string $returnsAcceptedOption
- * @property string $warrantyOfferedOption
- * @property string $warrantyTypeOption
- * @property string $warrantyDurationOption
- * @property string $restockingFeeValue
- * @property string $holidayReturns
  */
 class ReturnPolicyInfo extends \DTS\eBaySDK\Types\BaseType
 {
@@ -58,36 +53,6 @@ class ReturnPolicyInfo extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnsAcceptedOption'
-        ],
-        'warrantyOfferedOption' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'warrantyOfferedOption'
-        ],
-        'warrantyTypeOption' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'warrantyTypeOption'
-        ],
-        'warrantyDurationOption' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'warrantyDurationOption'
-        ],
-        'restockingFeeValue' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'restockingFeeValue'
-        ],
-        'holidayReturns' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'holidayReturns'
         ]
     ];
 

@@ -16,11 +16,12 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\AppealDetails $appealDetails
  * @property string $buyerClosureReason
  * @property string $buyerProtectedProgramLink
+ * @property boolean $caseContentOnHold
  * @property \DTS\eBaySDK\PostOrder\Types\CaseDetails $caseDetails
  * @property \DTS\eBaySDK\PostOrder\Types\ClaimHistoryResponse $caseHistoryDetails
  * @property string $caseId
  * @property integer $caseQuantity
- * @property string $caseType
+ * @property \DTS\eBaySDK\PostOrder\Enums\CaseTypeEnum $caseType
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $claimAmount
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $creationDate
  * @property \DTS\eBaySDK\PostOrder\Enums\UserPartyEnum $escalatedBy
@@ -31,6 +32,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $fsnadShipToSellerByDate
  * @property \DTS\eBaySDK\PostOrder\Enums\UserPartyEnum $initiator
  * @property string $itemId
+ * @property boolean $itemOnHold
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $lastModifiedDate
  * @property string $payForItemLink
  * @property string $priceSignatureConfirmationAmount
@@ -71,6 +73,12 @@ class CaseDetailsResponse extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerProtectedProgramLink'
+        ],
+        'caseContentOnHold' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'caseContentOnHold'
         ],
         'caseDetails' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\CaseDetails',
@@ -161,6 +169,12 @@ class CaseDetailsResponse extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemId'
+        ],
+        'itemOnHold' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'itemOnHold'
         ],
         'lastModifiedDate' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',

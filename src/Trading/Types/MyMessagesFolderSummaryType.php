@@ -14,9 +14,7 @@ namespace DTS\eBaySDK\Trading\Types;
  *
  * @property integer $FolderID
  * @property string $FolderName
- * @property integer $NewAlertCount
  * @property integer $NewMessageCount
- * @property integer $TotalAlertCount
  * @property integer $TotalMessageCount
  * @property integer $NewHighPriorityCount
  * @property integer $TotalHighPriorityCount
@@ -39,23 +37,11 @@ class MyMessagesFolderSummaryType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'FolderName'
         ],
-        'NewAlertCount' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'NewAlertCount'
-        ],
         'NewMessageCount' => [
             'type' => 'integer',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'NewMessageCount'
-        ],
-        'TotalAlertCount' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'TotalAlertCount'
         ],
         'TotalMessageCount' => [
             'type' => 'integer',

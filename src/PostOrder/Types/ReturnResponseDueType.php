@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property string $activityDue
+ * @property \DTS\eBaySDK\PostOrder\Enums\ActivityOptionEnum $activityDue
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $respondByDate
  */
 class ReturnResponseDueType extends \DTS\eBaySDK\Types\BaseType

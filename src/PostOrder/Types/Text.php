@@ -13,9 +13,9 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property string $content
- * @property \DTS\eBaySDK\PostOrder\Enums\LanguageEnum $language
+ * @property string $language
  * @property string $translatedFromContent
- * @property \DTS\eBaySDK\PostOrder\Enums\LanguageEnum $translatedFromLanguage
+ * @property string $translatedFromLanguage
  */
 class Text extends \DTS\eBaySDK\Types\BaseType
 {

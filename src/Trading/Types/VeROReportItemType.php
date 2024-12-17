@@ -19,6 +19,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Enums\ShippingRegionCodeType[] $Region
  * @property \DTS\eBaySDK\Trading\Enums\CountryCodeType[] $Country
  * @property string $Patent
+ * @property string $Brand
  * @property string $DetailedMessage
  */
 class VeROReportItemType extends \DTS\eBaySDK\Types\BaseType
@@ -68,6 +69,12 @@ class VeROReportItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Patent'
+        ],
+        'Brand' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'Brand'
         ],
         'DetailedMessage' => [
             'type' => 'string',

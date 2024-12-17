@@ -12,12 +12,10 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property string $GalleryURL
  * @property \DTS\eBaySDK\Trading\Enums\GalleryTypeCodeType $GalleryType
- * @property \DTS\eBaySDK\Trading\Enums\PhotoDisplayCodeType $PhotoDisplay
+ * @property string $GalleryURL
  * @property string[] $PictureURL
  * @property \DTS\eBaySDK\Trading\Enums\PictureSourceCodeType $PictureSource
- * @property string $GalleryDuration
  * @property \DTS\eBaySDK\Trading\Enums\GalleryStatusCodeType $GalleryStatus
  * @property string $GalleryErrorInfo
  * @property string[] $ExternalPictureURL
@@ -29,23 +27,17 @@ class PictureDetailsType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'GalleryURL' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'GalleryURL'
-        ],
         'GalleryType' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'GalleryType'
         ],
-        'PhotoDisplay' => [
+        'GalleryURL' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'PhotoDisplay'
+            'elementName' => 'GalleryURL'
         ],
         'PictureURL' => [
             'type' => 'string',
@@ -58,12 +50,6 @@ class PictureDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PictureSource'
-        ],
-        'GalleryDuration' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'GalleryDuration'
         ],
         'GalleryStatus' => [
             'type' => 'string',

@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $CategoryLevel
  * @property string $CategoryName
  * @property string[] $CategoryParentID
- * @property string[] $CategoryParentName
  * @property boolean $Expired
  * @property boolean $LeafCategory
  * @property boolean $Virtual
@@ -74,12 +73,6 @@ class CategoryType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'CategoryParentID'
-        ],
-        'CategoryParentName' => [
-            'type' => 'string',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'CategoryParentName'
         ],
         'Expired' => [
             'type' => 'boolean',

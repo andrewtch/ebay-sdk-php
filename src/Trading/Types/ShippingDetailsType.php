@@ -15,9 +15,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $GlobalShipping
  * @property \DTS\eBaySDK\Trading\Types\CalculatedShippingRateType $CalculatedShippingRate
  * @property boolean $ChangePaymentInstructions
- * @property boolean $InsuranceWanted
  * @property boolean $PaymentEdited
- * @property string $PaymentInstructions
  * @property \DTS\eBaySDK\Trading\Types\SalesTaxType $SalesTax
  * @property string $ShippingRateErrorMessage
  * @property \DTS\eBaySDK\Trading\Enums\ShippingRateTypeCodeType $ShippingRateType
@@ -25,7 +23,9 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\InternationalShippingServiceOptionsType[] $InternationalShippingServiceOption
  * @property \DTS\eBaySDK\Trading\Enums\ShippingTypeCodeType $ShippingType
  * @property integer $SellingManagerSalesRecordNumber
+ * @property boolean $ThirdPartyCheckout
  * @property \DTS\eBaySDK\Trading\Types\TaxTableType $TaxTable
+ * @property boolean $GetItFast
  * @property string $ShippingServiceUsed
  * @property string $ShippingDiscountProfileID
  * @property \DTS\eBaySDK\Trading\Types\FlatShippingDiscountType $FlatShippingDiscount
@@ -36,8 +36,8 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\CalculatedShippingDiscountType $InternationalCalculatedShippingDiscount
  * @property boolean $InternationalPromotionalShippingDiscount
  * @property \DTS\eBaySDK\Trading\Types\PromotionalShippingDiscountDetailsType $PromotionalShippingDiscountDetails
- * @property \DTS\eBaySDK\Trading\Types\AmountType $CODCost
  * @property string[] $ExcludeShipToLocation
+ * @property \DTS\eBaySDK\Trading\Types\AmountType $eBayEstimatedLabelCost
  * @property boolean $SellerExcludeShipToLocationsPreference
  * @property \DTS\eBaySDK\Trading\Types\ShipmentTrackingDetailsType[] $ShipmentTrackingDetails
  * @property \DTS\eBaySDK\Trading\Types\RateTableDetailsType $RateTableDetails
@@ -66,23 +66,11 @@ class ShippingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'ChangePaymentInstructions'
         ],
-        'InsuranceWanted' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InsuranceWanted'
-        ],
         'PaymentEdited' => [
             'type' => 'boolean',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaymentEdited'
-        ],
-        'PaymentInstructions' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PaymentInstructions'
         ],
         'SalesTax' => [
             'type' => 'DTS\eBaySDK\Trading\Types\SalesTaxType',
@@ -126,11 +114,23 @@ class ShippingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'SellingManagerSalesRecordNumber'
         ],
+        'ThirdPartyCheckout' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'ThirdPartyCheckout'
+        ],
         'TaxTable' => [
             'type' => 'DTS\eBaySDK\Trading\Types\TaxTableType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TaxTable'
+        ],
+        'GetItFast' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'GetItFast'
         ],
         'ShippingServiceUsed' => [
             'type' => 'string',
@@ -192,17 +192,17 @@ class ShippingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'PromotionalShippingDiscountDetails'
         ],
-        'CODCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'CODCost'
-        ],
         'ExcludeShipToLocation' => [
             'type' => 'string',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ExcludeShipToLocation'
+        ],
+        'eBayEstimatedLabelCost' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayEstimatedLabelCost'
         ],
         'SellerExcludeShipToLocationsPreference' => [
             'type' => 'boolean',

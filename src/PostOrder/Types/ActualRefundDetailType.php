@@ -13,9 +13,12 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property \DTS\eBaySDK\PostOrder\Types\RefundDetailType $actualRefund
+ * @property \DTS\eBaySDK\PostOrder\Types\RefundFundingType[] $fundings
+ * @property \DTS\eBaySDK\PostOrder\Types\Amount $netChargeAmount
+ * @property \DTS\eBaySDK\PostOrder\Types\Amount $outstandingAmount
  * @property \DTS\eBaySDK\PostOrder\Enums\ReturnRefundInitiatorEnum $refundInitiationType
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $refundIssuedDate
- * @property string $refundStatus
+ * @property \DTS\eBaySDK\PostOrder\Enums\Refund_MoneyMovementStatusEnum $refundStatus
  */
 class ActualRefundDetailType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -28,6 +31,24 @@ class ActualRefundDetailType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actualRefund'
+        ],
+        'fundings' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\RefundFundingType',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'fundings'
+        ],
+        'netChargeAmount' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'netChargeAmount'
+        ],
+        'outstandingAmount' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'outstandingAmount'
         ],
         'refundInitiationType' => [
             'type' => 'string',

@@ -14,7 +14,6 @@ namespace DTS\eBaySDK\Trading\Types;
  *
  * @property integer $ActiveAuctionCount
  * @property integer $AuctionSellingCount
- * @property integer $AuctionBidCount
  * @property \DTS\eBaySDK\Trading\Types\AmountType $TotalAuctionSellingValue
  * @property integer $TotalSoldCount
  * @property \DTS\eBaySDK\Trading\Types\AmountType $TotalSoldValue
@@ -37,12 +36,6 @@ class SellingSummaryType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AuctionSellingCount'
-        ],
-        'AuctionBidCount' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'AuctionBidCount'
         ],
         'TotalAuctionSellingValue' => [
             'type' => 'DTS\eBaySDK\Trading\Types\AmountType',

@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\PaymentTransactionStatusCodeType $RefundStatus
  * @property \DTS\eBaySDK\Trading\Enums\RefundSourceTypeCodeType $RefundType
  * @property \DTS\eBaySDK\Trading\Types\UserIdentityType $RefundTo
  * @property \DateTime $RefundTime
@@ -26,12 +25,6 @@ class RefundTransactionInfoType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'RefundStatus' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'RefundStatus'
-        ],
         'RefundType' => [
             'type' => 'string',
             'repeatable' => false,

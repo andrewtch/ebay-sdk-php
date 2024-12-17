@@ -16,6 +16,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Enums\EnableCodeType $ApplicationEnable
  * @property string $AlertEmail
  * @property \DTS\eBaySDK\Trading\Enums\EnableCodeType $AlertEnable
+ * @property \DTS\eBaySDK\Trading\Enums\NotificationPayloadTypeCodeType $NotificationPayloadType
  * @property \DTS\eBaySDK\Trading\Enums\DeviceTypeCodeType $DeviceType
  * @property string $PayloadVersion
  * @property \DTS\eBaySDK\Trading\Types\DeliveryURLDetailType[] $DeliveryURLDetails
@@ -49,6 +50,12 @@ class ApplicationDeliveryPreferencesType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AlertEnable'
+        ],
+        'NotificationPayloadType' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'NotificationPayloadType'
         ],
         'DeviceType' => [
             'type' => 'string',

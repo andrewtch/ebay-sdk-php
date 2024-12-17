@@ -12,8 +12,8 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property string $refundSource
- * @property string $refundStatus
+ * @property \DTS\eBaySDK\PostOrder\Enums\RefundPaymentTypeEnum $refundSource
+ * @property \DTS\eBaySDK\PostOrder\Enums\RefundStatusEnum $refundStatus
  */
 class VoluntaryRefundResult extends \DTS\eBaySDK\Types\BaseType
 {

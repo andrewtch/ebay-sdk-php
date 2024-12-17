@@ -28,6 +28,7 @@ class NotificationEventTypeCodeType
     const C_BUYER_CANCEL_REQUESTED = 'BuyerCancelRequested';
     const C_BUYER_NO_SHOW = 'BuyerNoShow';
     const C_BUYER_RESPONSE_DISPUTE = 'BuyerResponseDispute';
+    const C_CHECKOUT = 'Checkout';
     const C_CHECKOUT_BUYER_REQUESTS_TOTAL = 'CheckoutBuyerRequestsTotal';
     const C_COUNTER_OFFER_RECEIVED = 'CounterOfferReceived';
     const C_CUSTOM_CODE = 'CustomCode';
@@ -45,6 +46,7 @@ class NotificationEventTypeCodeType
     const C_EMAIL_ADDRESS_CHANGED = 'EmailAddressChanged';
     const C_END_OF_AUCTION = 'EndOfAuction';
     const C_FEEDBACK = 'Feedback';
+    const C_FEEDBACK_FOR_SELLER = 'FeedbackForSeller';
     const C_FEEDBACK_LEFT = 'FeedbackLeft';
     const C_FEEDBACK_RECEIVED = 'FeedbackReceived';
     const C_FEEDBACK_STAR_CHANGED = 'FeedbackStarChanged';
@@ -54,6 +56,7 @@ class NotificationEventTypeCodeType
     const C_INR_BUYER_RESPONDED_TO_DISPUTE = 'INRBuyerRespondedToDispute';
     const C_INR_SELLER_RESPONDED_TO_DISPUTE = 'INRSellerRespondedToDispute';
     const C_ITEMS_CANCELED = 'ItemsCanceled';
+    const C_ITEM_ADDED_TO_BID_GROUP = 'ItemAddedToBidGroup';
     const C_ITEM_ADDED_TO_WATCH_LIST = 'ItemAddedToWatchList';
     const C_ITEM_CLOSED = 'ItemClosed';
     const C_ITEM_EXTENDED = 'ItemExtended';
@@ -63,6 +66,7 @@ class NotificationEventTypeCodeType
     const C_ITEM_MARKED_SHIPPED = 'ItemMarkedShipped';
     const C_ITEM_OUT_OF_STOCK = 'ItemOutOfStock';
     const C_ITEM_READY_FOR_PICKUP = 'ItemReadyForPickup';
+    const C_ITEM_REMOVED_FROM_BID_GROUP = 'ItemRemovedFromBidGroup';
     const C_ITEM_REMOVED_FROM_WATCH_LIST = 'ItemRemovedFromWatchList';
     const C_ITEM_REVISED = 'ItemRevised';
     const C_ITEM_REVISED_ADD_CHARITY = 'ItemRevisedAddCharity';
@@ -75,6 +79,8 @@ class NotificationEventTypeCodeType
     const C_MY_MESSAGESE_BAY_MESSAGE_HEADER = 'MyMessageseBayMessageHeader';
     const C_MY_MESSAGESM2M_MESSAGE = 'MyMessagesM2MMessage';
     const C_MY_MESSAGESM2M_MESSAGE_HEADER = 'MyMessagesM2MMessageHeader';
+    const C_MY_MESSAGES_ALERT = 'MyMessagesAlert';
+    const C_MY_MESSAGES_ALERT_HEADER = 'MyMessagesAlertHeader';
     const C_MY_MESSAGES_HIGH_PRIORITY_MESSAGE = 'MyMessagesHighPriorityMessage';
     const C_MY_MESSAGES_HIGH_PRIORITY_MESSAGE_HEADER = 'MyMessagesHighPriorityMessageHeader';
     const C_NONE = 'None';
@@ -108,6 +114,7 @@ class NotificationEventTypeCodeType
     const C_SELLER_OPENED_DISPUTE = 'SellerOpenedDispute';
     const C_SELLER_RESPONDED_TO_DISPUTE = 'SellerRespondedToDispute';
     const C_SHOPPING_CART_ITEM_ENDING_SOON = 'ShoppingCartItemEndingSoon';
+    const C_THIRD_PARTY_CART_CHECKOUT = 'ThirdPartyCartCheckout';
     const C_TOKEN_REVOCATION = 'TokenRevocation';
     const C_UNMATCHED_PAYMENT_RECEIVED = 'UnmatchedPaymentReceived';
     const C_USERID_CHANGED = 'UserIDChanged';

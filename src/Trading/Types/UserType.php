@@ -35,21 +35,15 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\BuyerType $BuyerInfo
  * @property \DTS\eBaySDK\Trading\Types\SellerType $SellerInfo
  * @property \DTS\eBaySDK\Trading\Enums\BusinessRoleType $BusinessRole
- * @property \DTS\eBaySDK\Trading\Enums\PayPalAccountLevelCodeType $PayPalAccountLevel
- * @property \DTS\eBaySDK\Trading\Enums\PayPalAccountTypeCodeType $PayPalAccountType
- * @property \DTS\eBaySDK\Trading\Enums\PayPalAccountStatusCodeType $PayPalAccountStatus
  * @property \DTS\eBaySDK\Trading\Enums\EBaySubscriptionTypeCodeType[] $UserSubscription
  * @property boolean $eBayWikiReadOnly
  * @property integer $TUVLevel
  * @property string $VATID
- * @property boolean $MotorsDealer
  * @property \DTS\eBaySDK\Trading\Types\BiddingSummaryType $BiddingSummary
  * @property boolean $UserAnonymized
  * @property integer $UniqueNeutralFeedbackCount
  * @property boolean $EnterpriseSeller
- * @property string $BillingEmail
  * @property boolean $QualifiesForSelling
- * @property string $StaticAlias
  * @property \DTS\eBaySDK\Trading\Types\AddressType $ShippingAddress
  * @property \DTS\eBaySDK\Trading\Types\MembershipDetailsType $Membership
  * @property string $UserFirstName
@@ -199,24 +193,6 @@ class UserType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'BusinessRole'
         ],
-        'PayPalAccountLevel' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PayPalAccountLevel'
-        ],
-        'PayPalAccountType' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PayPalAccountType'
-        ],
-        'PayPalAccountStatus' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PayPalAccountStatus'
-        ],
         'UserSubscription' => [
             'type' => 'string',
             'repeatable' => true,
@@ -240,12 +216,6 @@ class UserType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VATID'
-        ],
-        'MotorsDealer' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'MotorsDealer'
         ],
         'BiddingSummary' => [
             'type' => 'DTS\eBaySDK\Trading\Types\BiddingSummaryType',
@@ -271,23 +241,11 @@ class UserType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'EnterpriseSeller'
         ],
-        'BillingEmail' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'BillingEmail'
-        ],
         'QualifiesForSelling' => [
             'type' => 'boolean',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'QualifiesForSelling'
-        ],
-        'StaticAlias' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'StaticAlias'
         ],
         'ShippingAddress' => [
             'type' => 'DTS\eBaySDK\Trading\Types\AddressType',

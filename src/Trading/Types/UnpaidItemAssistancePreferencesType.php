@@ -17,7 +17,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $AutoRelist
  * @property boolean $RemoveAllExcludedUsers
  * @property string[] $ExcludedUser
- * @property boolean $AutoOptDonationRefund
  */
 class UnpaidItemAssistancePreferencesType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -54,12 +53,6 @@ class UnpaidItemAssistancePreferencesType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ExcludedUser'
-        ],
-        'AutoOptDonationRefund' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'AutoOptDonationRefund'
         ]
     ];
 

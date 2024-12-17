@@ -14,12 +14,14 @@ namespace DTS\eBaySDK\PostOrder\Types;
  *
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $creationDate
  * @property string $fileData
- * @property string $fileFormat
+ * @property \DTS\eBaySDK\PostOrder\Enums\FileFormatEnum $fileFormat
  * @property string $fileId
- * @property string $filePurpose
- * @property string $fileStatus
+ * @property string $fileName
+ * @property \DTS\eBaySDK\PostOrder\Enums\FilePurposeEnum $filePurpose
+ * @property \DTS\eBaySDK\PostOrder\Enums\FileStatusEnum $fileStatus
  * @property string $resizedFileData
- * @property string $submitter
+ * @property string $secureUrl
+ * @property \DTS\eBaySDK\PostOrder\Enums\ReturnUserRoleEnum $submitter
  */
 class ReturnFileType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -51,6 +53,12 @@ class ReturnFileType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'fileId'
         ],
+        'fileName' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'fileName'
+        ],
         'filePurpose' => [
             'type' => 'string',
             'repeatable' => false,
@@ -68,6 +76,12 @@ class ReturnFileType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'resizedFileData'
+        ],
+        'secureUrl' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'secureUrl'
         ],
         'submitter' => [
             'type' => 'string',

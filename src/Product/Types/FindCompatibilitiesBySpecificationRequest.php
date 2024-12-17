@@ -91,7 +91,7 @@ class FindCompatibilitiesBySpecificationRequest extends \DTS\eBaySDK\Product\Typ
         }
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {
-            self::$xmlNamespaces[__CLASS__] = 'xmlns="http://www.ebay.com/marketplace/marketplacecatalog/v1/services"';
+            self::$xmlNamespaces[__CLASS__] = 'xmlns="https://www.ebay.com/marketplace/marketplacecatalog/v1/services"';
         }
 
         if (!array_key_exists(__CLASS__, self::$requestXmlRootElementNames)) {

@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\PaymentTransactionStatusCodeType $PaymentStatus
  * @property \DTS\eBaySDK\Trading\Types\UserIdentityType $Payer
  * @property \DTS\eBaySDK\Trading\Types\UserIdentityType $Payee
  * @property \DateTime $PaymentTime
@@ -27,12 +26,6 @@ class PaymentTransactionType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'PaymentStatus' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PaymentStatus'
-        ],
         'Payer' => [
             'type' => 'DTS\eBaySDK\Trading\Types\UserIdentityType',
             'repeatable' => false,

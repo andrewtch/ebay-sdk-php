@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property string $refundStatus
+ * @property \DTS\eBaySDK\PostOrder\Enums\Refund_MoneyMovementStatusEnum $refundStatus
  */
 class IssueRefundResponse extends \DTS\eBaySDK\Types\BaseType
 {

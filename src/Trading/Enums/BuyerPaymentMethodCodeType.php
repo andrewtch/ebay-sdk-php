@@ -16,7 +16,6 @@ class BuyerPaymentMethodCodeType
     const C_CASH_IN_PERSON = 'CashInPerson';
     const C_CASH_ON_PICKUP = 'CashOnPickup';
     const C_CC_ACCEPTED = 'CCAccepted';
-    const C_COD = 'COD';
     const C_COD_PRE_PAY_DELIVERY = 'CODPrePayDelivery';
     const C_CREDIT_CARD = 'CreditCard';
     const C_CUSTOM_CODE = 'CustomCode';

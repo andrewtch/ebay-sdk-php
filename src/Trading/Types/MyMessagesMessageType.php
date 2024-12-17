@@ -18,11 +18,9 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $Subject
  * @property string $MessageID
  * @property string $ExternalMessageID
- * @property string $ContentType
  * @property string $Text
  * @property boolean $Flagged
  * @property boolean $Read
- * @property \DateTime $CreationDate
  * @property \DateTime $ReceiveDate
  * @property \DateTime $ExpirationDate
  * @property string $ItemID
@@ -80,12 +78,6 @@ class MyMessagesMessageType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'ExternalMessageID'
         ],
-        'ContentType' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ContentType'
-        ],
         'Text' => [
             'type' => 'string',
             'repeatable' => false,
@@ -103,12 +95,6 @@ class MyMessagesMessageType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Read'
-        ],
-        'CreationDate' => [
-            'type' => 'DateTime',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'CreationDate'
         ],
         'ReceiveDate' => [
             'type' => 'DateTime',

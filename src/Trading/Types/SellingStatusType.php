@@ -30,6 +30,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $SoldAsBin
  * @property integer $QuantitySoldByPickupInStore
  * @property \DTS\eBaySDK\Trading\Types\SuggestedBidValueType $SuggestedBidValues
+ * @property boolean $ListingOnHold
  */
 class SellingStatusType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -144,6 +145,12 @@ class SellingStatusType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SuggestedBidValues'
+        ],
+        'ListingOnHold' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'ListingOnHold'
         ]
     ];
 

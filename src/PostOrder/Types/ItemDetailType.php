@@ -12,8 +12,17 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
+ * @property boolean $ebayPlusTxn
  * @property string $itemId
+ * @property boolean $itemOnHold
+ * @property string $itemPicUrl
+ * @property \DTS\eBaySDK\PostOrder\Types\Amount $itemPrice
+ * @property string $itemTitle
+ * @property integer $listingSiteId
+ * @property string $relistedItemId
+ * @property \DTS\eBaySDK\PostOrder\Enums\RelistStatusEnum $relistStatus
  * @property integer $returnQuantity
+ * @property \DTS\eBaySDK\PostOrder\Types\DateTime $transactionDate
  * @property string $transactionId
  */
 class ItemDetailType extends \DTS\eBaySDK\Types\BaseType
@@ -22,17 +31,71 @@ class ItemDetailType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
+        'ebayPlusTxn' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'ebayPlusTxn'
+        ],
         'itemId' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemId'
         ],
+        'itemOnHold' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'itemOnHold'
+        ],
+        'itemPicUrl' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'itemPicUrl'
+        ],
+        'itemPrice' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'itemPrice'
+        ],
+        'itemTitle' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'itemTitle'
+        ],
+        'listingSiteId' => [
+            'type' => 'integer',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'listingSiteId'
+        ],
+        'relistedItemId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'relistedItemId'
+        ],
+        'relistStatus' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'relistStatus'
+        ],
         'returnQuantity' => [
             'type' => 'integer',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnQuantity'
+        ],
+        'transactionDate' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'transactionDate'
         ],
         'transactionId' => [
             'type' => 'string',

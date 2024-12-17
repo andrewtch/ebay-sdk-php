@@ -13,7 +13,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property \DTS\eBaySDK\PostOrder\Types\ShipmentTrackingType[] $allShipmentTrackings
- * @property string $payee
+ * @property \DTS\eBaySDK\PostOrder\Enums\ReturnUserRoleEnum $payee
  * @property \DTS\eBaySDK\PostOrder\Types\ShipmentTrackingType $shipmentTracking
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnShippingCostDetailType $shippingLabelCost
  */

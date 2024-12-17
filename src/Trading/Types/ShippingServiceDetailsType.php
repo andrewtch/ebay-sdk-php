@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $ShippingServiceID
  * @property integer $ShippingTimeMax
  * @property integer $ShippingTimeMin
- * @property \DTS\eBaySDK\Trading\Enums\ShippingServiceCodeType $ShippingServiceCode
  * @property \DTS\eBaySDK\Trading\Enums\ShippingTypeCodeType[] $ServiceType
  * @property \DTS\eBaySDK\Trading\Enums\ShippingPackageCodeType[] $ShippingPackage
  * @property boolean $DimensionsRequired
@@ -83,12 +82,6 @@ class ShippingServiceDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingTimeMin'
-        ],
-        'ShippingServiceCode' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingServiceCode'
         ],
         'ServiceType' => [
             'type' => 'string',

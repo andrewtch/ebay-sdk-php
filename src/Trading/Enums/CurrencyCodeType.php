@@ -139,6 +139,7 @@ class CurrencyCodeType
     const C_PYG = 'PYG';
     const C_QAR = 'QAR';
     const C_ROL = 'ROL';
+    const C_RON = 'RON';
     const C_RUB = 'RUB';
     const C_RUR = 'RUR';
     const C_RWF = 'RWF';

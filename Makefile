@@ -80,92 +80,92 @@ release: check_tag clean package
 full_release: tag release
 
 sync_account:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Account/src/Account/ src/Account/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Account/test/Account/ test/Account/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Account/src/Account/ src/Account/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Account/test/Account/ test/Account/
 
 sync_analytics:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Analytics/src/Analytics/ src/Analytics/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Analytics/test/Analytics/ test/Analytics/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Analytics/src/Analytics/ src/Analytics/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Analytics/test/Analytics/ test/Analytics/
 
 sync_browse:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Browse/src/Browse/ src/Browse/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Browse/test/Browse/ test/Browse/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Browse/src/Browse/ src/Browse/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Browse/test/Browse/ test/Browse/
 
 sync_bus:
-	rsync -rtvu  --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/BusinessPoliciesManagement/src/BusinessPoliciesManagement/ src/BusinessPoliciesManagement/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/BusinessPoliciesManagement/test/BusinessPoliciesManagement/ test/BusinessPoliciesManagement/
+	rsync -rtv  --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/BusinessPoliciesManagement/src/BusinessPoliciesManagement/ src/BusinessPoliciesManagement/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/BusinessPoliciesManagement/test/BusinessPoliciesManagement/ test/BusinessPoliciesManagement/
 
 sync_catalog:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Catalog/src/Catalog/ src/Catalog/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Catalog/test/Catalog/ test/Catalog/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Catalog/src/Catalog/ src/Catalog/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Catalog/test/Catalog/ test/Catalog/
 
 sync_compliance:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Compliance/src/Compliance/ src/Compliance/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Compliance/test/Compliance/ test/Compliance/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Compliance/src/Compliance/ src/Compliance/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Compliance/test/Compliance/ test/Compliance/
 
 sync_feed:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Feed/src/Feed/ src/Feed/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Feed/test/Feed/ test/Feed/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Feed/src/Feed/ src/Feed/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Feed/test/Feed/ test/Feed/
 
 sync_finding:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Finding/src/Finding/ src/Finding/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Finding/test/Finding/ test/Finding/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Finding/src/Finding/ src/Finding/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Finding/test/Finding/ test/Finding/
 
 sync_fulfillment:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Fulfillment/src/Fulfillment/ src/Fulfillment/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Fulfillment/test/Fulfillment/ test/Fulfillment/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Fulfillment/src/Fulfillment/ src/Fulfillment/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Fulfillment/test/Fulfillment/ test/Fulfillment/
 
 sync_half:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/HalfFinding/src/HalfFinding/ src/HalfFinding/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/HalfFinding/test/HalfFinding/ test/HalfFinding/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/HalfFinding/src/HalfFinding/ src/HalfFinding/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/HalfFinding/test/HalfFinding/ test/HalfFinding/
 
 sync_inventory:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Inventory/src/Inventory/ src/Inventory/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Inventory/test/Inventory/ test/Inventory/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Inventory/src/Inventory/ src/Inventory/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Inventory/test/Inventory/ test/Inventory/
 
 sync_marketing:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Marketing/src/Marketing/ src/Marketing/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Marketing/test/Marketing/ test/Marketing/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Marketing/src/Marketing/ src/Marketing/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Marketing/test/Marketing/ test/Marketing/
 
 sync_merchand:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Merchandising/src/Merchandising/ src/Merchandising/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Merchandising/test/Merchandising/ test/Merchandising/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Merchandising/src/Merchandising/ src/Merchandising/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Merchandising/test/Merchandising/ test/Merchandising/
 
 sync_metadata:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Metadata/src/Metadata/ src/Metadata/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Metadata/test/Metadata/ test/Metadata/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Metadata/src/Metadata/ src/Metadata/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Metadata/test/Metadata/ test/Metadata/
 
 sync_order:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Order/src/Order/ src/Order/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Order/test/Order/ test/Order/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Order/src/Order/ src/Order/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Order/test/Order/ test/Order/
 
 sync_taxonomy:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Taxonomy/src/Taxonomy/ src/Taxonomy/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Taxonomy/test/Taxonomy/ test/Taxonomy/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Taxonomy/src/Taxonomy/ src/Taxonomy/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Taxonomy/test/Taxonomy/ test/Taxonomy/
 
 sync_post:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/PostOrder/src/PostOrder/ src/PostOrder/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/PostOrder/test/PostOrder/ test/PostOrder/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/PostOrder/src/PostOrder/ src/PostOrder/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/PostOrder/test/PostOrder/ test/PostOrder/
 
 sync_product:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Product/src/Product/ src/Product/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Product/test/Product/ test/Product/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Product/src/Product/ src/Product/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Product/test/Product/ test/Product/
 
 sync_product_metadata:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/ProductMetadata/src/ProductMetadata/ src/ProductMetadata/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/ProductMetadata/test/ProductMetadata/ test/ProductMetadata/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/ProductMetadata/src/ProductMetadata/ src/ProductMetadata/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/ProductMetadata/test/ProductMetadata/ test/ProductMetadata/
 
 sync_return:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/ReturnManagement/src/ReturnManagement/ src/ReturnManagement/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/ReturnManagement/test/ReturnManagement/ test/ReturnManagement/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/ReturnManagement/src/ReturnManagement/ src/ReturnManagement/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/ReturnManagement/test/ReturnManagement/ test/ReturnManagement/
 
 sync_shop:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Shopping/src/Shopping/ src/Shopping/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Shopping/test/Shopping/ test/Shopping/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Shopping/src/Shopping/ src/Shopping/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Shopping/test/Shopping/ test/Shopping/
 
 sync_trade:
-	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Trading/src/Trading/ src/Trading/
-	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Trading/test/Trading/ test/Trading/
+	rsync -rtv --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Trading/src/Trading/ src/Trading/
+	rsync -rtv --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/Trading/test/Trading/ test/Trading/
 
 sync_all: sync_account		\
 	  sync_analytics	\

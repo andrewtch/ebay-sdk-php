@@ -15,8 +15,8 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $carrier
  * @property \DTS\eBaySDK\PostOrder\Types\Text $comments
  * @property string $itemId
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnReasonEnum $reason
- * @property string $requestType
+ * @property string $reason
+ * @property \DTS\eBaySDK\PostOrder\Enums\RequestTypeEnum $requestType
  * @property integer $returnQuantity
  * @property string $transactionId
  * @property \DTS\eBaySDK\PostOrder\Enums\ReturnTypeEnum $type

@@ -34,7 +34,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnAddressType $originAddress
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $shipDate
  * @property string $shipmentId
- * @property string $shippedBy
+ * @property \DTS\eBaySDK\PostOrder\Enums\ReturnUserRoleEnum $shippedBy
  * @property \DTS\eBaySDK\PostOrder\Enums\ShippingMethodEnum $shippingMethod
  * @property string $trackingNumber
  */

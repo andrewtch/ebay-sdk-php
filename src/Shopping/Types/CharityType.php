@@ -14,11 +14,9 @@ namespace DTS\eBaySDK\Shopping\Types;
  *
  * @property string $CharityID
  * @property string $CharityName
- * @property integer $CharityNumber
  * @property double $DonationPercent
  * @property string $Mission
  * @property string $LogoURL
- * @property boolean $CharityListing
  * @property \DTS\eBaySDK\Shopping\Enums\CharityStatusCodeType $Status
  */
 class CharityType extends \DTS\eBaySDK\Types\BaseType
@@ -39,12 +37,6 @@ class CharityType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'CharityName'
         ],
-        'CharityNumber' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'CharityNumber'
-        ],
         'DonationPercent' => [
             'type' => 'double',
             'repeatable' => false,
@@ -62,12 +54,6 @@ class CharityType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'LogoURL'
-        ],
-        'CharityListing' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'CharityListing'
         ],
         'Status' => [
             'type' => 'string',

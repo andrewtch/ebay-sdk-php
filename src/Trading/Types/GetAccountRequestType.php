@@ -13,16 +13,17 @@ namespace DTS\eBaySDK\Trading\Types;
 /**
  *
  * @property \DTS\eBaySDK\Trading\Enums\AccountHistorySelectionCodeType $AccountHistorySelection
- * @property \DateTime $InvoiceDate
  * @property \DateTime $BeginDate
  * @property \DateTime $EndDate
  * @property \DTS\eBaySDK\Trading\Types\PaginationType $Pagination
  * @property boolean $ExcludeBalance
  * @property boolean $ExcludeSummary
  * @property boolean $IncludeConversionRate
+ * @property boolean $IncludeNettedEntries
  * @property \DTS\eBaySDK\Trading\Enums\AccountEntrySortTypeCodeType $AccountEntrySortType
  * @property \DTS\eBaySDK\Trading\Enums\CurrencyCodeType $Currency
  * @property string $ItemID
+ * @property string $OrderID
  */
 class GetAccountRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
 {
@@ -35,12 +36,6 @@ class GetAccountRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestTy
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AccountHistorySelection'
-        ],
-        'InvoiceDate' => [
-            'type' => 'DateTime',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InvoiceDate'
         ],
         'BeginDate' => [
             'type' => 'DateTime',
@@ -78,6 +73,12 @@ class GetAccountRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestTy
             'attribute' => false,
             'elementName' => 'IncludeConversionRate'
         ],
+        'IncludeNettedEntries' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'IncludeNettedEntries'
+        ],
         'AccountEntrySortType' => [
             'type' => 'string',
             'repeatable' => false,
@@ -95,6 +96,12 @@ class GetAccountRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestTy
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ItemID'
+        ],
+        'OrderID' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'OrderID'
         ]
     ];
 

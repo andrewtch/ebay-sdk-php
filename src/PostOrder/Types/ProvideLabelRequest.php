@@ -18,10 +18,9 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $fileId
  * @property boolean $forwardShippingLabelProvided
  * @property \DTS\eBaySDK\PostOrder\Enums\LabelActionEnum $labelAction
- * @property string $labelId
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $labelSentDate
  * @property \DTS\eBaySDK\PostOrder\Enums\NoSellerUploadLabelReasonEnum $noLabelReason
- * @property \DTS\eBaySDK\PostOrder\Types\B:Amount $returnLabelCost
+ * @property \DTS\eBaySDK\PostOrder\Types\Amount $returnLabelCost
  * @property string $trackingNumber
  */
 class ProvideLabelRequest extends \DTS\eBaySDK\Types\BaseType
@@ -66,12 +65,6 @@ class ProvideLabelRequest extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'labelAction'
         ],
-        'labelId' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'labelId'
-        ],
         'labelSentDate' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
@@ -85,7 +78,7 @@ class ProvideLabelRequest extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'noLabelReason'
         ],
         'returnLabelCost' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\B:Amount',
+            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnLabelCost'

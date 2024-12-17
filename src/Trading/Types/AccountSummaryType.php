@@ -25,13 +25,13 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $CreditCardInfo
  * @property \DateTime $CreditCardModifyDate
  * @property \DTS\eBaySDK\Trading\Types\AmountType $CurrentBalance
- * @property string $Email
  * @property \DTS\eBaySDK\Trading\Types\AmountType $InvoiceBalance
  * @property \DateTime $InvoiceDate
  * @property \DTS\eBaySDK\Trading\Types\AmountType $LastAmountPaid
  * @property \DateTime $LastPaymentDate
  * @property boolean $PastDue
  * @property \DTS\eBaySDK\Trading\Enums\SellerPaymentMethodCodeType $PaymentMethod
+ * @property \DTS\eBaySDK\Trading\Types\NettedTransactionSummaryType $NettedTransactionSummary
  */
 class AccountSummaryType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -117,12 +117,6 @@ class AccountSummaryType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'CurrentBalance'
         ],
-        'Email' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Email'
-        ],
         'InvoiceBalance' => [
             'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
@@ -158,6 +152,12 @@ class AccountSummaryType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaymentMethod'
+        ],
+        'NettedTransactionSummary' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\NettedTransactionSummaryType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'NettedTransactionSummary'
         ]
     ];
 

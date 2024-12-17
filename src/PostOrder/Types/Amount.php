@@ -12,9 +12,10 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Enums\CurrencyCodeEnum $convertedFromCurrency
+ * @property string $convertedFromCurrency
  * @property double $convertedFromValue
- * @property \DTS\eBaySDK\PostOrder\Enums\CurrencyCodeEnum $currency
+ * @property string $currency
+ * @property string $exchangeRate
  * @property double $value
  */
 class Amount extends \DTS\eBaySDK\Types\BaseType
@@ -40,6 +41,12 @@ class Amount extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'currency'
+        ],
+        'exchangeRate' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'exchangeRate'
         ],
         'value' => [
             'type' => 'double',

@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property string $actionType
+ * @property \DTS\eBaySDK\PostOrder\Enums\ActivityOptionEnum $actionType
  * @property string $actionURL
  */
 class AvailableOptionType extends \DTS\eBaySDK\Types\BaseType

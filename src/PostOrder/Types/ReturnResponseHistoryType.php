@@ -12,13 +12,13 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property string $activity
+ * @property \DTS\eBaySDK\PostOrder\Enums\ActivityOptionEnum $activity
  * @property \DTS\eBaySDK\PostOrder\Types\ResponseHistoryAttributesType $attributes
- * @property string $author
+ * @property \DTS\eBaySDK\PostOrder\Enums\ReturnUserRoleEnum $author
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $creationDate
- * @property string $fromState
+ * @property \DTS\eBaySDK\PostOrder\Enums\ReturnStateEnum $fromState
  * @property string $notes
- * @property string $toState
+ * @property \DTS\eBaySDK\PostOrder\Enums\ReturnStateEnum $toState
  */
 class ReturnResponseHistoryType extends \DTS\eBaySDK\Types\BaseType
 {

@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Enums\CompleteStatusCodeType $CompleteStatus
  * @property boolean $BuyerSelectedShipping
  * @property \DTS\eBaySDK\Trading\Enums\PaymentHoldStatusCodeType $PaymentHoldStatus
- * @property boolean $IntegratedMerchantCreditCardEnabled
  * @property \DTS\eBaySDK\Trading\Enums\InquiryStatusCodeType $InquiryStatus
  * @property \DTS\eBaySDK\Trading\Enums\ReturnStatusCodeType $ReturnStatus
  * @property \DTS\eBaySDK\Trading\Enums\BuyerPaymentInstrumentCodeType $PaymentInstrument
@@ -73,12 +72,6 @@ class TransactionStatusType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaymentHoldStatus'
-        ],
-        'IntegratedMerchantCreditCardEnabled' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'IntegratedMerchantCreditCardEnabled'
         ],
         'InquiryStatus' => [
             'type' => 'string',

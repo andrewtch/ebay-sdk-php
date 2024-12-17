@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property integer $PaisaPayStatus
  * @property boolean $AllowPaymentEdit
  * @property \DTS\eBaySDK\Trading\Enums\CurrencyCodeType $BillingCurrency
  * @property boolean $CheckoutEnabled
@@ -30,10 +29,8 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Enums\SellerPaymentMethodCodeType $PaymentMethod
  * @property boolean $CharityRegistered
  * @property boolean $SafePaymentExempt
- * @property integer $PaisaPayEscrowEMIStatus
  * @property \DTS\eBaySDK\Trading\Types\CharityAffiliationDetailsType $CharityAffiliationDetails
  * @property double $TransactionPercent
- * @property \DTS\eBaySDK\Trading\Types\IntegratedMerchantCreditCardInfoType $IntegratedMerchantCreditCardInfo
  * @property \DTS\eBaySDK\Trading\Types\FeatureEligibilityType $FeatureEligibility
  * @property boolean $TopRatedSeller
  * @property \DTS\eBaySDK\Trading\Types\TopRatedSellerDetailsType $TopRatedSellerDetails
@@ -46,12 +43,6 @@ class SellerType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'PaisaPayStatus' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PaisaPayStatus'
-        ],
         'AllowPaymentEdit' => [
             'type' => 'boolean',
             'repeatable' => false,
@@ -154,12 +145,6 @@ class SellerType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'SafePaymentExempt'
         ],
-        'PaisaPayEscrowEMIStatus' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PaisaPayEscrowEMIStatus'
-        ],
         'CharityAffiliationDetails' => [
             'type' => 'DTS\eBaySDK\Trading\Types\CharityAffiliationDetailsType',
             'repeatable' => false,
@@ -171,12 +156,6 @@ class SellerType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TransactionPercent'
-        ],
-        'IntegratedMerchantCreditCardInfo' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\IntegratedMerchantCreditCardInfoType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'IntegratedMerchantCreditCardInfo'
         ],
         'FeatureEligibility' => [
             'type' => 'DTS\eBaySDK\Trading\Types\FeatureEligibilityType',

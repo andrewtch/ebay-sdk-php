@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $ReturnedTransactionCountActual
  * @property \DTS\eBaySDK\Trading\Types\ItemType $Item
  * @property \DTS\eBaySDK\Trading\Types\TransactionArrayType $TransactionArray
- * @property boolean $PayPalPreferred
  */
 class GetItemTransactionsResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
 {
@@ -68,12 +67,6 @@ class GetItemTransactionsResponseType extends \DTS\eBaySDK\Trading\Types\Abstrac
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TransactionArray'
-        ],
-        'PayPalPreferred' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PayPalPreferred'
         ]
     ];
 

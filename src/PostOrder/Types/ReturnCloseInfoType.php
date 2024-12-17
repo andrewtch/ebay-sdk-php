@@ -13,8 +13,9 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property string $buyerCloseComment
- * @property string $buyerCloseReason
- * @property string $returnCloseReason
+ * @property \DTS\eBaySDK\PostOrder\Enums\BuyerCloseReturnReasonEnum $buyerCloseReason
+ * @property \DTS\eBaySDK\PostOrder\Types\DateTime $returnCloseDate
+ * @property \DTS\eBaySDK\PostOrder\Enums\CloseReturnReasonEnum $returnCloseReason
  */
 class ReturnCloseInfoType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -33,6 +34,12 @@ class ReturnCloseInfoType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerCloseReason'
+        ],
+        'returnCloseDate' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'returnCloseDate'
         ],
         'returnCloseReason' => [
             'type' => 'string',

@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $inquiryId
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $latestPossibleFilingDate
  * @property \DTS\eBaySDK\PostOrder\Types\EligibilityResponseError[] $nonOverridableErrors
- * @property \DTS\eBaySDK\PostOrder\Enums\PaymentDenialReasonEnum $paypalReasonToDenyRequestFiling
+ * @property string $paypalReasonToDenyRequestFiling
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $returnFilingDate
  * @property string $returnId
  * @property \DTS\eBaySDK\PostOrder\Types\EligibilityResponseError[] $warnings

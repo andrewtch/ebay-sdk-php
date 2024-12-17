@@ -13,7 +13,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property \DTS\eBaySDK\PostOrder\Types\CarrierShippingCostInfoType[] $carriers
- * @property string $returnShipmentPayer
+ * @property \DTS\eBaySDK\PostOrder\Enums\ReturnUserRoleEnum $returnShipmentPayer
  */
 class EstimatedShippingInfoType extends \DTS\eBaySDK\Types\BaseType
 {

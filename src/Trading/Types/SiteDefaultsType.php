@@ -46,19 +46,13 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $SafePaymentRequired
  * @property boolean $ClassifiedAdPayPerLeadEnabled
  * @property \DTS\eBaySDK\Trading\Enums\ItemSpecificsEnabledCodeType $ItemSpecificsEnabled
- * @property boolean $PaisaPayFullEscrowEnabled
- * @property boolean $ISBNIdentifierEnabled
- * @property boolean $UPCIdentifierEnabled
- * @property boolean $EANIdentifierEnabled
  * @property boolean $BrandMPNIdentifierEnabled
  * @property boolean $ClassifiedAdAutoAcceptEnabled
  * @property boolean $BestOfferAutoAcceptEnabled
  * @property boolean $CrossBorderTradeNorthAmericaEnabled
  * @property boolean $CrossBorderTradeGBEnabled
  * @property boolean $CrossBorderTradeAustraliaEnabled
- * @property boolean $PayPalBuyerProtectionEnabled
  * @property boolean $BuyerGuaranteeEnabled
- * @property \DTS\eBaySDK\Trading\Enums\INEscrowWorkflowTimelineCodeType $INEscrowWorkflowTimeline
  * @property \DTS\eBaySDK\Trading\Types\ListingEnhancementDurationReferenceType $GalleryFeaturedDurations
  * @property boolean $PayPalRequired
  * @property \DTS\eBaySDK\Trading\Enums\AdFormatEnabledCodeType $eBayMotorsProAdFormatEnabled
@@ -118,6 +112,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $MaxItemCompatibility
  * @property \DTS\eBaySDK\Trading\Enums\ConditionEnabledCodeType $ConditionEnabled
  * @property \DTS\eBaySDK\Trading\Types\ConditionValuesType $ConditionValues
+ * @property \DTS\eBaySDK\Trading\Types\ConditionValuesType $SpecialFeatures
  * @property boolean $ValueCategory
  * @property \DTS\eBaySDK\Trading\Enums\ProductCreationEnabledCodeType $ProductCreationEnabled
  * @property \DTS\eBaySDK\Trading\Enums\ProductIdentiferEnabledCodeType $EANEnabled
@@ -125,7 +120,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Enums\ProductIdentiferEnabledCodeType $UPCEnabled
  * @property integer $MaxGranularFitmentCount
  * @property string $CompatibleVehicleType
- * @property \DTS\eBaySDK\Trading\Enums\PaymentOptionsGroupEnabledCodeType $PaymentOptionsGroup
  * @property \DTS\eBaySDK\Trading\Enums\ProfileCategoryGroupCodeType $ShippingProfileCategoryGroup
  * @property \DTS\eBaySDK\Trading\Enums\ProfileCategoryGroupCodeType $PaymentProfileCategoryGroup
  * @property \DTS\eBaySDK\Trading\Enums\ProfileCategoryGroupCodeType $ReturnPolicyProfileCategoryGroup
@@ -140,6 +134,15 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $EpidSupported
  * @property boolean $KTypeSupported
  * @property \DTS\eBaySDK\Trading\Enums\ProductRequiredEnabledCodeType $ProductRequiredEnabled
+ * @property \DTS\eBaySDK\Trading\Types\DomesticReturnsAcceptedCodeType $DomesticReturnsAcceptedValues
+ * @property \DTS\eBaySDK\Trading\Types\InternationalReturnsAcceptedCodeType $InternationalReturnsAcceptedValues
+ * @property \DTS\eBaySDK\Trading\Types\DomesticReturnsDurationCodeType $DomesticReturnsDurationValues
+ * @property \DTS\eBaySDK\Trading\Types\InternationalReturnsDurationCodeType $InternationalReturnsDurationValues
+ * @property \DTS\eBaySDK\Trading\Types\DomesticReturnsShipmentPayeeCodeType $DomesticReturnsShipmentPayeeValues
+ * @property \DTS\eBaySDK\Trading\Types\InternationalReturnsShipmentPayeeCodeType $InternationalReturnsShipmentPayeeValues
+ * @property \DTS\eBaySDK\Trading\Types\DomesticRefundMethodCodeType $DomesticRefundMethodValues
+ * @property \DTS\eBaySDK\Trading\Types\InternationalRefundMethodCodeType $InternationalRefundMethodValues
+ * @property boolean $ReturnPolicyDescriptionEnabled
  */
 class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -351,30 +354,6 @@ class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'ItemSpecificsEnabled'
         ],
-        'PaisaPayFullEscrowEnabled' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PaisaPayFullEscrowEnabled'
-        ],
-        'ISBNIdentifierEnabled' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ISBNIdentifierEnabled'
-        ],
-        'UPCIdentifierEnabled' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'UPCIdentifierEnabled'
-        ],
-        'EANIdentifierEnabled' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'EANIdentifierEnabled'
-        ],
         'BrandMPNIdentifierEnabled' => [
             'type' => 'boolean',
             'repeatable' => false,
@@ -411,23 +390,11 @@ class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'CrossBorderTradeAustraliaEnabled'
         ],
-        'PayPalBuyerProtectionEnabled' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PayPalBuyerProtectionEnabled'
-        ],
         'BuyerGuaranteeEnabled' => [
             'type' => 'boolean',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyerGuaranteeEnabled'
-        ],
-        'INEscrowWorkflowTimeline' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'INEscrowWorkflowTimeline'
         ],
         'GalleryFeaturedDurations' => [
             'type' => 'DTS\eBaySDK\Trading\Types\ListingEnhancementDurationReferenceType',
@@ -783,6 +750,12 @@ class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'ConditionValues'
         ],
+        'SpecialFeatures' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\ConditionValuesType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'SpecialFeatures'
+        ],
         'ValueCategory' => [
             'type' => 'boolean',
             'repeatable' => false,
@@ -824,12 +797,6 @@ class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CompatibleVehicleType'
-        ],
-        'PaymentOptionsGroup' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PaymentOptionsGroup'
         ],
         'ShippingProfileCategoryGroup' => [
             'type' => 'string',
@@ -914,6 +881,60 @@ class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ProductRequiredEnabled'
+        ],
+        'DomesticReturnsAcceptedValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\DomesticReturnsAcceptedCodeType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'DomesticReturnsAcceptedValues'
+        ],
+        'InternationalReturnsAcceptedValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\InternationalReturnsAcceptedCodeType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'InternationalReturnsAcceptedValues'
+        ],
+        'DomesticReturnsDurationValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\DomesticReturnsDurationCodeType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'DomesticReturnsDurationValues'
+        ],
+        'InternationalReturnsDurationValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\InternationalReturnsDurationCodeType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'InternationalReturnsDurationValues'
+        ],
+        'DomesticReturnsShipmentPayeeValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\DomesticReturnsShipmentPayeeCodeType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'DomesticReturnsShipmentPayeeValues'
+        ],
+        'InternationalReturnsShipmentPayeeValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\InternationalReturnsShipmentPayeeCodeType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'InternationalReturnsShipmentPayeeValues'
+        ],
+        'DomesticRefundMethodValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\DomesticRefundMethodCodeType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'DomesticRefundMethodValues'
+        ],
+        'InternationalRefundMethodValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\InternationalRefundMethodCodeType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'InternationalRefundMethodValues'
+        ],
+        'ReturnPolicyDescriptionEnabled' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'ReturnPolicyDescriptionEnabled'
         ]
     ];
 

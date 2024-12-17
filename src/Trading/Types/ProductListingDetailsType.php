@@ -22,7 +22,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $UPC
  * @property string $EAN
  * @property \DTS\eBaySDK\Trading\Types\BrandMPNType $BrandMPN
- * @property \DTS\eBaySDK\Trading\Types\TicketListingDetailsType $TicketListingDetails
  * @property boolean $UseFirstProduct
  * @property boolean $IncludeeBayProductDetails
  */
@@ -91,12 +90,6 @@ class ProductListingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BrandMPN'
-        ],
-        'TicketListingDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\TicketListingDetailsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'TicketListingDetails'
         ],
         'UseFirstProduct' => [
             'type' => 'boolean',

@@ -16,17 +16,15 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\AmountType $StartPrice
  * @property integer $Quantity
  * @property \DTS\eBaySDK\Trading\Types\NameValueListArrayType[] $VariationSpecifics
- * @property integer $UnitsAvailable
- * @property \DTS\eBaySDK\Trading\Types\AmountType $UnitCost
  * @property \DTS\eBaySDK\Trading\Types\SellingStatusType $SellingStatus
  * @property string $VariationTitle
  * @property string $VariationViewItemURL
  * @property boolean $Delete
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerProductInventoryStatusType $SellingManagerProductInventoryStatus
  * @property integer $WatchCount
  * @property string $PrivateNotes
  * @property \DTS\eBaySDK\Trading\Types\DiscountPriceInfoType $DiscountPriceInfo
  * @property \DTS\eBaySDK\Trading\Types\VariationProductListingDetailsType $VariationProductListingDetails
+ * @property \DTS\eBaySDK\Trading\Types\VariationExtendedProducerResponsibilityType $VariationExtendedProducerResponsibility
  */
 class VariationType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -58,18 +56,6 @@ class VariationType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'VariationSpecifics'
         ],
-        'UnitsAvailable' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'UnitsAvailable'
-        ],
-        'UnitCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'UnitCost'
-        ],
         'SellingStatus' => [
             'type' => 'DTS\eBaySDK\Trading\Types\SellingStatusType',
             'repeatable' => false,
@@ -94,12 +80,6 @@ class VariationType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'Delete'
         ],
-        'SellingManagerProductInventoryStatus' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerProductInventoryStatusType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SellingManagerProductInventoryStatus'
-        ],
         'WatchCount' => [
             'type' => 'integer',
             'repeatable' => false,
@@ -123,6 +103,12 @@ class VariationType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VariationProductListingDetails'
+        ],
+        'VariationExtendedProducerResponsibility' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\VariationExtendedProducerResponsibilityType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'VariationExtendedProducerResponsibility'
         ]
     ];
 

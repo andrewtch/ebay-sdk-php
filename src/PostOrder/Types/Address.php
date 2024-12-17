@@ -14,17 +14,17 @@ namespace DTS\eBaySDK\PostOrder\Types;
  *
  * @property string $addressLine1
  * @property string $addressLine2
- * @property \DTS\eBaySDK\PostOrder\Enums\AddressTypeEnum $addressType
+ * @property string $addressType
  * @property string $city
- * @property \DTS\eBaySDK\PostOrder\Enums\CountryCodeEnum $country
+ * @property string $country
  * @property string $county
  * @property boolean $isTransliterated
  * @property string $nationalRegion
  * @property string $postalCode
- * @property \DTS\eBaySDK\PostOrder\Enums\LanguageScriptEnum $script
+ * @property string $script
  * @property string $stateOrProvince
- * @property \DTS\eBaySDK\PostOrder\Enums\LanguageScriptEnum $transliteratedFromScript
- * @property \DTS\eBaySDK\PostOrder\Enums\WorldRegionEnum $worldRegion
+ * @property string $transliteratedFromScript
+ * @property string $worldRegion
  */
 class Address extends \DTS\eBaySDK\Types\BaseType
 {

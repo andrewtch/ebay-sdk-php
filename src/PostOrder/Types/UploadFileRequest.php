@@ -12,9 +12,9 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property string[] $data
+ * @property string $data
  * @property string $fileName
- * @property string $filePurpose
+ * @property \DTS\eBaySDK\PostOrder\Enums\FilePurposeEnum $filePurpose
  */
 class UploadFileRequest extends \DTS\eBaySDK\Types\BaseType
 {

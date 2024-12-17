@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $claimAmount
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $creationDate
  * @property integer $inquiryId
- * @property \DTS\eBaySDK\PostOrder\Enums\InquiryStatusEnum $inquiryStatusEnum
+ * @property string $inquiryStatusEnum
  * @property integer $itemId
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $lastModifiedDate
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $respondByDate

@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property string $closeReason
+ * @property \DTS\eBaySDK\PostOrder\Enums\BuyerCloseReasonEnum $closeReason
  * @property \DTS\eBaySDK\PostOrder\Types\Text $comments
  */
 class BuyerCloseInquiryRequest extends \DTS\eBaySDK\Types\BaseType

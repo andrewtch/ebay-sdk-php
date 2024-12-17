@@ -14,7 +14,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  *
  * @property string $buyer
  * @property integer $caseId
- * @property \DTS\eBaySDK\PostOrder\Enums\CaseStatusEnum $caseStatusEnum
+ * @property string $caseStatusEnum
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $claimAmount
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $creationDate
  * @property integer $itemId

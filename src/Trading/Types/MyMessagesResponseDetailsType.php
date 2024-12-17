@@ -14,7 +14,6 @@ namespace DTS\eBaySDK\Trading\Types;
  *
  * @property boolean $ResponseEnabled
  * @property string $ResponseURL
- * @property \DateTime $UserResponseDate
  */
 class MyMessagesResponseDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -33,12 +32,6 @@ class MyMessagesResponseDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ResponseURL'
-        ],
-        'UserResponseDate' => [
-            'type' => 'DateTime',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'UserResponseDate'
         ]
     ];
 

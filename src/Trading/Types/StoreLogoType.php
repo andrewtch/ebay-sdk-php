@@ -12,8 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property integer $LogoID
- * @property string $Name
  * @property string $URL
  */
 class StoreLogoType extends \DTS\eBaySDK\Types\BaseType
@@ -22,18 +20,6 @@ class StoreLogoType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'LogoID' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'LogoID'
-        ],
-        'Name' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Name'
-        ],
         'URL' => [
             'type' => 'string',
             'repeatable' => false,

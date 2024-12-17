@@ -15,8 +15,9 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $appealCloseReasonEnum
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $appealDate
  * @property string $appealReasonCode
- * @property string $appealStatus
- * @property \DTS\eBaySDK\PostOrder\Enums\AppealStatusEnum $appealStatusEnum
+ * @property \DTS\eBaySDK\PostOrder\Types\Amount $appealRefundAmount
+ * @property \DTS\eBaySDK\PostOrder\Enums\AppealGrantStatusEnum $appealStatus
+ * @property string $appealStatusEnum
  * @property boolean $eligibleForAppeal
  */
 class AppealDetails extends \DTS\eBaySDK\Types\BaseType
@@ -42,6 +43,12 @@ class AppealDetails extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'appealReasonCode'
+        ],
+        'appealRefundAmount' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'appealRefundAmount'
         ],
         'appealStatus' => [
             'type' => 'string',

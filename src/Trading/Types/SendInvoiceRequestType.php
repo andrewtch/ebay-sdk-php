@@ -18,13 +18,9 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\InternationalShippingServiceOptionsType[] $InternationalShippingServiceOptions
  * @property \DTS\eBaySDK\Trading\Types\ShippingServiceOptionsType[] $ShippingServiceOptions
  * @property \DTS\eBaySDK\Trading\Types\SalesTaxType $SalesTax
- * @property \DTS\eBaySDK\Trading\Enums\InsuranceOptionCodeType $InsuranceOption
- * @property \DTS\eBaySDK\Trading\Types\AmountType $InsuranceFee
  * @property \DTS\eBaySDK\Trading\Enums\BuyerPaymentMethodCodeType[] $PaymentMethods
- * @property string $PayPalEmailAddress
  * @property string $CheckoutInstructions
  * @property boolean $EmailCopyToSeller
- * @property \DTS\eBaySDK\Trading\Types\AmountType $CODCost
  * @property string $SKU
  * @property string $OrderLineItemID
  * @property \DTS\eBaySDK\Trading\Types\AmountType $AdjustmentAmount
@@ -71,29 +67,11 @@ class SendInvoiceRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestT
             'attribute' => false,
             'elementName' => 'SalesTax'
         ],
-        'InsuranceOption' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InsuranceOption'
-        ],
-        'InsuranceFee' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InsuranceFee'
-        ],
         'PaymentMethods' => [
             'type' => 'string',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'PaymentMethods'
-        ],
-        'PayPalEmailAddress' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PayPalEmailAddress'
         ],
         'CheckoutInstructions' => [
             'type' => 'string',
@@ -106,12 +84,6 @@ class SendInvoiceRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestT
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'EmailCopyToSeller'
-        ],
-        'CODCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'CODCost'
         ],
         'SKU' => [
             'type' => 'string',
